@@ -2,7 +2,19 @@ import componentsImg from "./assets/components.png";
 import propsImg from "./assets/config.png";
 import jsxImg from "./assets/jsx-ui.png";
 import stateImg from "./assets/state-mgmt.png";
-import { DataExampleInterface } from "./utils/interfaces";
+
+interface CodeExample {
+  title: string;
+  description: string;
+  code: string;
+}
+
+interface Data {
+  components: CodeExample;
+  jsx: CodeExample;
+  props: CodeExample;
+  state: CodeExample;
+}
 
 export const CORE_CONCEPTS = [
   {
@@ -31,7 +43,7 @@ export const CORE_CONCEPTS = [
   },
 ];
 
-export const EXAMPLES: DataExampleInterface = {
+export const EXAMPLES: Data = {
   components: {
     title: "Components",
     description:

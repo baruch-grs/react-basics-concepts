@@ -1,0 +1,20 @@
+.examples {
+  margin: 3rem auto;
+}
+
+.examples h2 {
+  text-align: left;
+}
+
+.examples .custom-menu {
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+#examples menu button.active {
+  background-color: #7925d3;
+  color: #ebe7ef;
+}

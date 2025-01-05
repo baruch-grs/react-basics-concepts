@@ -1,6 +1,6 @@
 export interface HeaderProps {
   headerTitle: string;
-  headerParagraph: string;
+  headerParagraph?: string;
   headerImage?: string;
   headerAltText?: string;
 }

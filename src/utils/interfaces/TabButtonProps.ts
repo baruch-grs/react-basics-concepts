@@ -1,5 +1,5 @@
 export interface TabButtonProps {
   children: React.ReactNode;
-  onSelect: () => void;
+  onClick: () => void;
   isSelected: boolean;
 }

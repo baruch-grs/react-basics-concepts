@@ -3,13 +3,13 @@ import { TabButtonProps } from "../../utils/interfaces";
 
 export const TabButton = ({
   children,
-  onSelect,
   isSelected,
+  ...props
 }: TabButtonProps) => {
   return (
     <li>
       <button
-        onClick={onSelect}
+        {...props}
         className={`custom-menu-button ${isSelected ? "active" : ""}`}
       >
         {children}
