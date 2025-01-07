@@ -1,12 +1,19 @@
 interface TabsProps {
   children: React.ReactNode;
   buttons: React.ReactNode;
+  buttonsContainer?: any;
   className?: string;
 }
-export const Tabs = ({ children, buttons, className }: TabsProps) => {
+export const Tabs = ({
+  children,
+  buttons,
+  buttonsContainer = "menu",
+  ...props
+}: TabsProps) => {
+  const ButtonsContainer = buttonsContainer;
   return (
     <>
-      <menu className={className}>{buttons}</menu>
+      <ButtonsContainer {...props}>{buttons}</ButtonsContainer>
       {children}
     </>
   );
